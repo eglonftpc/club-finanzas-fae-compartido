@@ -1,0 +1,55 @@
+@import "tailwindcss";
+
+:root {
+  --bg: #0a0c0f;
+  --bg-panel: #11151a;
+  --border: #1e2630;
+  --text: #e8eef4;
+  --muted: #8b98a8;
+  --accent: #f5a623;
+  --up: #3dd68c;
+  --down: #f07178;
+  --mono: "IBM Plex Mono", "JetBrains Mono", ui-monospace, monospace;
+  --sans: "IBM Plex Sans", system-ui, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font-family: var(--sans);
+}
+
+body {
+  overflow: hidden;
+}
+
+::selection {
+  background: color-mix(in srgb, var(--accent) 40%, transparent);
+  color: var(--text);
+}
+
+button {
+  background: transparent;
+  color: inherit;
+  cursor: pointer;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.font-mono {
+  font-family: var(--mono);
+}
+
+.tabular-nums {
+  font-variant-numeric: tabular-nums;
+}
