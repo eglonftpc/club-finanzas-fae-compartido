@@ -1,0 +1,12 @@
+{
+  "name": "ledgerlands",
+  "version": "2.0.0",
+  "private": true,
+  "description": "A point-and-click market-town RPG about money.",
+  "scripts": {
+    "start": "python3 -m http.server 5173",
+    "bundle": "node scripts/bundle.mjs",
+    "bundle:fragment": "node scripts/bundle.mjs --fragment",
+    "check": "node --check src/data.js && node --check src/game.js"
+  }
+}
